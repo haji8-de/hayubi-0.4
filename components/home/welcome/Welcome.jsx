@@ -9,10 +9,10 @@ import {
 } from 'react-native';
 import { useRouter } from "expo-router";
 
-import styles from './welcome.style'
+import styles from './welcome.style';
 import { icons, SIZES } from "../../../constants";
 
-const jobTypes = ["Full-time", "Part-time", "Contractor"];
+const jobTypes = ["Full-time", "Part-time", "1day"];
 
 const Welcome = ({ searchTerm, setSearchTerm, handleClick }) => {
     const router = useRouter();
@@ -22,7 +22,7 @@ const Welcome = ({ searchTerm, setSearchTerm, handleClick }) => {
         <View>
             <View style={styles.container}>
                 <Text style={styles.userName}>
-                    Hello Elijah
+                    Hello HAJI
                 </Text>
                 <Text style={styles.welcomeMessage}>
                     Find your perfect job

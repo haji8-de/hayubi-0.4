@@ -8,7 +8,6 @@ import {
     ActivityIndicator,
     RefreshControl,
 } from "react-native";
-
 import {
     Company,
     JobAbout,
@@ -46,20 +45,20 @@ const JobDetails = () => {
                 return (
                     <Specifics
                         title='Qualifications'
-                        points={data[0].job_highlights?.Qualifications ?? ["N/A"]}
+                        points={data[0].qualifications.split('|') ?? ["N/A"]}
                     />
                 );
 
             case "About":
                 return (
-                    <JobAbout info={data[0].job_description ?? "No data provided"} />
+                    <JobAbout info={data[0].description ?? "No data provided"} />
                 );
 
             case "Responsibilities":
                 return (
                     <Specifics
                         title='Responsibilities'
-                        points={data[0].job_highlights?.Responsibilities ?? ["N/A"]}
+                        points={data[0].responsibilities.split('|') ?? ["N/A"]}
                     />
                 );
 
@@ -104,9 +103,9 @@ const JobDetails = () => {
                         <View style={{ padding: SIZES.medium, paddingBottom: 100 }}>
                             <Company
                                 companyLogo={data[0].employer_logo}
-                                jobTitle={data[0].job_title}
+                                jobTitle={data[0].title}
                                 companyName={data[0].employer_name}
-                                location={data[0].job_country}
+                                location={data[0].country}
                             />
 
                             <JobTabs

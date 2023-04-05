@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
     borderRadius: 12,
     paddingVertical: 24,
     paddingHorizontal: 20,
-    marginBottom: 12,
+    marginBottom: 3,
     elevation: 5
   },
   cardHeader: {
@@ -45,7 +45,7 @@ export const styles = StyleSheet.create({
     color: colors.text,
     fontFamily: fonts.light,
     fontSize: fonts.xs,
-    marginBottom: 28
+    marginBottom: 20
   },
   cardFooter: {
     flexDirection: 'row',

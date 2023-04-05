@@ -1,6 +1,7 @@
 import ScreenHeaderBtn from "./common/header/ScreenHeaderBtn";
 
 // home screen
+import Community from "./home/community/Community";
 import Welcome from "./home/welcome/Welcome";
 import Nearbyjobs from "./home/nearby/Nearbyjobs";
 import Popularjobs from "./home/popular/Popularjobs";
@@ -15,9 +16,13 @@ import Specifics from "./jobdetails/specifics/Specifics";
 // common
 import NearbyJobCard from "./common/cards/nearby/NearbyJobCard";
 
+
+import { default as AddTaskModal } from './modal/addTaskModal'
+
 export {
   ScreenHeaderBtn,
   Welcome,
+  Community,
   Nearbyjobs,
   Popularjobs,
   Company,
@@ -25,5 +30,6 @@ export {
   JobAbout,
   JobFooter,
   Specifics,
-  NearbyJobCard
+  NearbyJobCard,
+  AddTaskModal
 };

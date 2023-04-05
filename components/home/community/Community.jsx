@@ -9,19 +9,16 @@ import useFetch from "../../../hooks/useFetch";
 
 const Community = () => {
     const router = useRouter();
-    const data = [{"title":"TEST", "priority":"critical", "done":true}]
-    const isLoading = {}
-    const error = {}
-//     const { data, isLoading, error } = useFetch("community", {
-//         query: "",
-//         num_pages: "1",
-//     });
+//     const data = [{"title":"TEST", "description":"critical", "editor":"haji"},{"title":"TEST", "description":"critical", "editor":"haji"},{"title":"TEST", "description":"critical", "editor":"haji"},{"title":"TEST", "description":"critical", "editor":"haji"}]
+//     const isLoading = ""
+//     const error = ""
+    const { data, isLoading, error } = useFetch("community", {
+        query: "",
+        num_pages: "1",
+    });
 
     return (
         <View style={styles.container}>
-            <View style={styles.header}>
-                <Text style={styles.headerTitle}>Community</Text>
-            </View>
 
             <View style={styles.cardsContainer}>
                 {isLoading ? (

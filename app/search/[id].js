@@ -23,7 +23,7 @@ const JobSearch = () => {
         try {
             const options = {
                 method: "GET",
-                url: `http://10.1.14.30:4000/search`,
+                url: `http://15.164.218.46:4000/search`,
                 headers: {
                 },
                 params: {

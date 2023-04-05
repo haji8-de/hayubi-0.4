@@ -8,7 +8,7 @@ const useFetch = (endpoint, query) => {
 
     const options = {
         method: 'GET',
-        url: `http://10.1.14.30:4000/${endpoint}`,
+        url: `http://15.164.218.46:4000/${endpoint}`,
         params: { ...query },
         headers: {
         }

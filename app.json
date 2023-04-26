@@ -4,7 +4,16 @@
     "web": {
       "bundler": "metro"
     },
-    "name": "job-seeking",
-    "slug": "job-seeking"
+    "extra": {
+      "eas": {
+        "projectId": "49476511-d797-4f98-bb62-3893390f1f26"
+      }
+    },
+    "android": {
+      "package": "com.haji08.hayubi"
+    },
+    "ios": {
+      "bundleIdentifier": "com.haji08.hayubi"
+    }
   }
 }

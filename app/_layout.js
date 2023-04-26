@@ -20,7 +20,11 @@ const Layout = () => {
 
     if (!fontsLoaded) return null;
 
-    return <Stack onLayout={onLayoutRootView} />
+    return <Stack
+          screenOptions={{
+            headerShown: false
+          }}
+        onLayout={onLayoutRootView} />
 }
 
 export default Layout;

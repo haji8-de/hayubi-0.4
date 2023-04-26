@@ -9,15 +9,19 @@ const CommunityCard = ({ item }) => {
     let dateOne = moment();
     let dateTwo = moment(datetime);
     const diffDay = dateOne.diff(dateTwo, 'days');
-    if(diffDay < 1){
+
+    if(diffDay <= 1){
         const diffMin = dateOne.diff(dateTwo, 'minutes');
+        if(diffMin > 60){
+            const diffMin = dateOne.diff(dateTwo, 'hours');
+            return "" + diffMin +"시간 전"
+        }
         return "" + diffMin +"분 전"
     }
     else if(diffDay > 31){
         const diffMin = dateOne.diff(dateTwo, 'months');
         return "" + diffMin +"달 전"
     }
-
     return "" + diffDay +"시간 전"
   }
 

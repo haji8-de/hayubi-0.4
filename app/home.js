@@ -163,7 +163,7 @@ const Home = () => {
       return (
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
           <Text>Profile!</Text>
-            <TouchableOpacity activeOpacity={0.5} onPress={FloatingButtonEvent} style={styles.TouchableOpacityStyle} >
+            <TouchableOpacity activeOpacity={0.5} style={styles.TouchableOpacityStyle} >
                <Image source={require('../assets/icons/apple.png')}  style={styles.FloatingButtonStyle} />
             </TouchableOpacity>
         </View>
